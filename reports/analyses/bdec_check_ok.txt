@@ -1,0 +1,5 @@
+flag 0: same (best 1737 / 1737, iters 252000 / 252000)
+flag 1: same (best 1732 / 1732, iters 252000 / 252000)
+flag 96 against fixw flag 1 --bigpen 1: same (best 1740 / 1740, iters 252000 / 252000)
+flag 32: runs, best 1739, iters 252000
+flag 64: runs, best 1739, iters 252000

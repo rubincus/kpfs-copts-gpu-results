@@ -1,0 +1,16 @@
+Stage B2 of test B (notes/pruebas_dirigidas.md): counters of the instrumented kernel (gpu/b2) on instances 01, 02, 03 of L4-FC-2000, original (z0) and with 20 items of profit 0 (z20), seeds 1-2, 10 s per run.
+asp: aspiration acceptances; asp_eq: those with Phi(S) + Delta <= Phi*; undo: steps that undo the previous step; undo0: those that move an item of profit 0. Rates per million walker steps.
+
+cell                     runs   Msteps       asp   asp_eq      undo     undo0     asp/M  asp_eq/M   undo/M  undo0/M
+z0 stag 3000 full           6     32.0    107319        9        75         0   3353.30     0.281     2.34    0.000
+z0 stag 3000 theta=0        6     32.0   1455254  1357693    946682         0  45471.00 42422.603 29580.11    0.000
+z0 stag 30000 full          6     31.9     84406        5        46         0   2644.30     0.157     1.44    0.000
+z0 stag 30000 theta=0       6     31.9   1265477  1186006    838719         0  39645.27 37155.576 26275.66    0.000
+z20 stag 3000 full          6     31.2     53124       12         0         0   1700.08     0.384     0.00    0.000
+z20 stag 3000 theta=0       6     31.2   4589610  4552679    430546    423092 146876.92145695.052 13778.3513539.811
+z20 stag 30000 full         6     31.2     42079        7         0         0   1350.24     0.225     0.00    0.000
+z20 stag 30000 theta=0      6     31.1   4524355  4498216    426425    419151 145571.27144730.245 13720.2413486.197
+
+B1 (implied by Proposition 6a): with theta = eps, no aspiration acceptance leaves Phi* unchanged -> does NOT hold: asp_eq = 33 over the 24 runs of the full method.
+B2 (construction of Proposition 6b): with theta = 0 on z20, aspiration acceptances that leave Phi* unchanged and steps that undo the previous one on items of profit 0 (cycles S <-> S + j) -> holds: stag 3000: asp_eq 4552679, undo0 423092; stag 30000: asp_eq 4498216, undo0 419151.
+For comparison, the full method on z20: stag 3000: undo0 0; stag 30000: undo0 0.

@@ -1,0 +1,25 @@
+Targeted tests (notes/pruebas_dirigidas.md). Time to the easy target: median of the full method and of the variant (s), ratio of medians variant/full, pairs in which the variant is slower/faster and two-sided sign test; final values: pairs in which the variant is worse/better; runs that reach the best value of the test.
+
+== A: single controller (--flags 4) on 4-FC-1000 with other b and k ==
+Regimes of the full method:
+AMBAS (b=1400, k=59)        50 runs: capacity full  37, b-W >= 1  13, mean b-W    0.3, V=k  29, mean k-V   0.7
+CAP (b=1400, k=127)         50 runs: capacity full  44, b-W >= 1   6, mean b-W    0.2, V=k   0, mean k-V  30.3
+COTA (b=2100, k=67)         50 runs: capacity full   0, b-W >= 1  50, mean b-W  188.9, V=k  45, mean k-V   0.1
+
+                         pairs t50 full  t50 var  ratio  slow/fast  p     values worse/better  p     BK full/var  it/s  restarts/Mstep full/var
+AMBAS                       50     2.17     3.02   1.39    29/21   0.322           2/0    0.5       47/45     1.01     162.7/162.6   
+CAP                         50     2.14     2.06   0.96    26/24   0.888           2/1    1         48/47     1.00     162.1/162.2   
+COTA                        50     0.13     0.13   0.98    24/23   1               0/0    1         50/50     1.00     163.8/163.9   
+
+== B: aspiration margin theta = 0 (--flags 8) on L4-FC-2000, original (z0) and with 20 zero items (z20) ==
+Regimes of the full method:
+z0, stag 3000               50 runs: capacity full   0, b-W >= 1  50, mean b-W  413.8, V=k  50, mean k-V   0.0
+z0, stag 30000              50 runs: capacity full   0, b-W >= 1  50, mean b-W  414.6, V=k  50, mean k-V   0.0
+z20, stag 3000              50 runs: capacity full   0, b-W >= 1  50, mean b-W  403.6, V=k  50, mean k-V   0.0
+z20, stag 30000             50 runs: capacity full   0, b-W >= 1  50, mean b-W  403.7, V=k  50, mean k-V   0.0
+
+                         pairs t50 full  t50 var  ratio  slow/fast  p     values worse/better  p     BK full/var  it/s  restarts/Mstep full/var
+z0, stag 3000               50     0.53     0.42   0.79    22/28   0.48            2/0    0.5       50/48     1.00     159.4/159.5   
+z0, stag 30000              50     0.57     0.40   0.71    20/30   0.203           0/1    1         48/49     1.00      12.1/12.2    
+z20, stag 3000              50     1.12     1.09   0.98    23/27   0.672           2/0    0.5       46/45     1.00     157.8/157.9   
+z20, stag 30000             50     1.12     1.05   0.93    24/26   0.888           3/0    0.25      46/45     1.00      12.2/12.2    

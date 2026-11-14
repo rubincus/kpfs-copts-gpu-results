@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use these results, please cite them as below, together with the benchmark of D'Ambrosio et al. (2023)."
+title: "CoPTS-KPFS results for the knapsack problem with forfeit sets"
+type: dataset
+authors:
+  - family-names: "García"
+    given-names: "José"
+version: "1.0.0"
+date-released: "2026-11-14"
+license: CC-BY-4.0
+repository-code: "https://github.com/rubincus/kpfs-copts-gpu-results"
+abstract: >-
+  Best solutions found for the 600 instances of the benchmark of the knapsack problem with forfeit sets and the
+  60 KPFS-L instances, records of every run of the experiments of CoPTS-KPFS, a structure-guided cooperative tabu
+  search with exact neighborhood evaluation on GPUs, reports of the analyses and a solution verifier.
+keywords:
+  - knapsack problem with forfeit sets
+  - tabu search
+  - GPU computing
+  - benchmark results
+  - combinatorial optimization

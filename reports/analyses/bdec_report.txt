@@ -1,0 +1,92 @@
+2 x 2 design on the ablation instances (ids 1-5, seeds 1-10, 30 s); ratio = median time b / median time a
+to the easy target of the full method (worst final value of F over its ten seeds)
+pair    group           n   t50 a   t50 b  ratio slow/fst        p       hier 95% fin w/b cens  rate
+F>H     3-C-1000       50    1.52    0.75   0.50    17/33  3.3e-02   [0.33, 0.99]     2/7    0  1.05  osc
+F>H     4-C-700        50    0.74    0.29   0.39    18/32  6.5e-02   [0.28, 0.90]     0/1    0  1.06  osc
+F>H     4-FC-1000      50    1.44    0.58   0.40    12/38  3.1e-04   [0.23, 0.71]     0/0    0  1.03  osc
+Q>X     3-C-1000       50    0.62    0.61   0.97    26/24  8.9e-01   [0.48, 1.68]     8/3    0  0.96  osc|qfree
+Q>X     4-C-700        50    0.41    0.28   0.67    18/32  6.5e-02   [0.26, 1.19]     0/0    0  0.98  osc|qfree
+Q>X     4-FC-1000      50    0.89    0.44   0.50    17/33  3.3e-02   [0.32, 1.02]     0/0    0  0.98  osc|qfree
+F>Q     3-C-1000       50    1.52    0.62   0.41     6/44  3.2e-08   [0.20, 0.71]    3/10    0  1.05  quarter
+F>Q     4-C-700        50    0.74    0.41   0.55    19/30  1.5e-01   [0.35, 1.27]     0/1    0  1.07  quarter
+F>Q     4-FC-1000      50    1.44    0.89   0.62    16/34  1.5e-02   [0.39, 0.92]     0/0    0  1.03  quarter
+H>X     3-C-1000       50    0.75    0.61   0.81    18/32  6.5e-02   [0.37, 1.16]     5/2    0  0.96  qrt|hold
+H>X     4-C-700        50    0.29    0.28   0.94    22/28  4.8e-01   [0.40, 1.35]     0/0    0  0.99  qrt|hold
+H>X     4-FC-1000      50    0.58    0.44   0.76    22/28  4.8e-01   [0.50, 1.40]     0/0    0  0.99  qrt|hold
+F>X     3-C-1000       50    1.52    0.61   0.40     9/41  5.6e-06   [0.19, 0.79]     4/6    0  1.01  both
+F>X     4-C-700        50    0.74    0.28   0.37    11/39  9.0e-05   [0.21, 0.68]     0/1    0  1.05  both
+F>X     4-FC-1000      50    1.44    0.44   0.31     9/41  5.6e-06   [0.20, 0.66]     0/0    0  1.01  both
+
+selected design X: general runs against the full method on the same instances and seeds
+pair    group           n   t50 a   t50 b  ratio slow/fst        p       hier 95% fin w/b cens  rate
+F>X     L4-FC-2000     50    0.61    0.62   1.01     47/3  3.7e-11   [1.01, 1.03]     0/0    0  1.01
+
+screen bdec_screen_X against main_gpu30 (seeds 1-3, 30 s): 180 pairs, final worse 18, better 0 (p=0.000)
+  1-C-1000     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.04 s, reached 3 -> 3 of 3
+  1-C-300      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.02 s, reached 3 -> 3 of 3
+  1-C-500      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  1-C-700      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  1-C-800      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  1-FC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.05 s, reached 3 -> 3 of 3
+  1-FC-300     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.02 -> 0.02 s, reached 3 -> 3 of 3
+  1-FC-500     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  1-FC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  1-FC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  1-NC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  1-NC-300     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.02 -> 0.02 s, reached 3 -> 3 of 3
+  1-NC-500     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  1-NC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  1-NC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  2-C-1000     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.07 -> 0.07 s, reached 3 -> 3 of 3
+  2-C-300      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.02 -> 0.02 s, reached 3 -> 3 of 3
+  2-C-500      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  2-C-700      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  2-C-800      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.05 s, reached 3 -> 3 of 3
+  2-FC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.07 -> 0.07 s, reached 3 -> 3 of 3
+  2-FC-300     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.02 -> 0.02 s, reached 3 -> 3 of 3
+  2-FC-500     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  2-FC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  2-FC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.05 s, reached 3 -> 3 of 3
+  2-NC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.07 -> 0.07 s, reached 3 -> 3 of 3
+  2-NC-300     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.02 -> 0.02 s, reached 3 -> 3 of 3
+  2-NC-500     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  2-NC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  2-NC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.00 -> 0.00 s, reached 3 -> 3 of 3
+  3-C-1000     final worse/better 2/0, mean -0.055 %, median time to the easy target 1.34 -> 0.57 s, reached 3 -> 3 of 3
+  3-C-300      final worse/better 3/0, mean -0.279 %, median time to the easy target 0.02 -> inf s, reached 3 -> 0 of 3
+  3-C-500      final worse/better 3/0, mean -0.568 %, median time to the easy target 0.27 -> inf s, reached 3 -> 0 of 3
+  3-C-700      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.46 -> 2.73 s, reached 3 -> 3 of 3
+  3-C-800      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.22 -> 0.11 s, reached 3 -> 3 of 3
+  3-FC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.40 -> 0.32 s, reached 3 -> 3 of 3
+  3-FC-300     final worse/better 3/0, mean -0.176 %, median time to the easy target 0.08 -> inf s, reached 3 -> 0 of 3
+  3-FC-500     final worse/better 3/0, mean -0.252 %, median time to the easy target 0.07 -> inf s, reached 3 -> 0 of 3
+  3-FC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.20 -> 0.76 s, reached 3 -> 3 of 3
+  3-FC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.11 -> 0.11 s, reached 3 -> 3 of 3
+  3-NC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.12 -> 0.12 s, reached 3 -> 3 of 3
+  3-NC-300     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.02 -> 0.02 s, reached 3 -> 3 of 3
+  3-NC-500     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  3-NC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.05 s, reached 3 -> 3 of 3
+  3-NC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.06 s, reached 3 -> 3 of 3
+  4-C-1000     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.85 -> 0.39 s, reached 3 -> 3 of 3
+  4-C-300      final worse/better 1/0, mean -0.258 %, median time to the easy target 0.05 -> 14.02 s, reached 3 -> 2 of 3
+  4-C-500      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.09 -> 0.03 s, reached 3 -> 3 of 3
+  4-C-700      final worse/better 0/0, mean +0.000 %, median time to the easy target 0.17 -> 0.16 s, reached 3 -> 3 of 3
+  4-C-800      final worse/better 0/0, mean +0.000 %, median time to the easy target 2.83 -> 1.85 s, reached 3 -> 3 of 3
+  4-FC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 5.32 -> 1.03 s, reached 3 -> 3 of 3
+  4-FC-300     final worse/better 3/0, mean -0.778 %, median time to the easy target 0.02 -> inf s, reached 3 -> 0 of 3
+  4-FC-500     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.24 -> 0.61 s, reached 3 -> 3 of 3
+  4-FC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.14 -> 0.36 s, reached 3 -> 3 of 3
+  4-FC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 3.54 -> 7.29 s, reached 3 -> 3 of 3
+  4-NC-1000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.06 -> 0.06 s, reached 3 -> 3 of 3
+  4-NC-300     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.02 -> 0.02 s, reached 3 -> 3 of 3
+  4-NC-500     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.03 -> 0.03 s, reached 3 -> 3 of 3
+  4-NC-700     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.04 -> 0.04 s, reached 3 -> 3 of 3
+  4-NC-800     final worse/better 0/0, mean +0.000 %, median time to the easy target 0.05 -> 0.05 s, reached 3 -> 3 of 3
+
+screen bdec_screen_X_kpfsl against main_gpu60_kpfsl (seeds 1-3, 60 s): 18 pairs, final worse 0, better 0 (p=1.000)
+  L3-C-2000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.48 -> 0.35 s, reached 3 -> 3 of 3
+  L3-FC-2000   final worse/better 0/0, mean +0.000 %, median time to the easy target 5.58 -> 4.50 s, reached 3 -> 3 of 3
+  L3-NC-2000   final worse/better 0/0, mean +0.000 %, median time to the easy target 0.73 -> 0.77 s, reached 3 -> 3 of 3
+  L4-C-2000    final worse/better 0/0, mean +0.000 %, median time to the easy target 0.28 -> 0.28 s, reached 3 -> 3 of 3
+  L4-FC-2000   final worse/better 0/0, mean +0.000 %, median time to the easy target 0.29 -> 0.30 s, reached 3 -> 3 of 3
+  L4-NC-2000   final worse/better 0/0, mean +0.000 %, median time to the easy target 0.47 -> 0.48 s, reached 3 -> 3 of 3

@@ -1,0 +1,30 @@
+Pilot of test A: full method, seed 101, 10 s; 0 of 200 runs missing.
+Instances (of 10) per regime of the best selection:
+
+    b    k    AMBAS      CAP     COTA  NINGUNA        -
+ 1400   59        7        0        0        0        3
+ 1400   63        6        0        0        0        4
+ 1400   67        5        0        0        0        5
+ 1400   97        1        2        0        0        7
+ 1400  127        0        9        0        0        1
+ 1550   59        6        0        0        0        4
+ 1550   63        5        0        0        0        5
+ 1550   67        3        0        0        0        7
+ 1550   97        2        3        0        0        5
+ 1550  127        0        4        0        0        6
+ 1800   59        2        0        1        0        7
+ 1800   63        2        0        0        0        8
+ 1800   67        5        0        0        0        5
+ 1800   97        7        0        0        0        3
+ 1800  127        1        2        0        0        7
+ 2100   59        0        0       10        0        0
+ 2100   63        0        0       10        0        0
+ 2100   67        0        0       10        0        0
+ 2100   97        0        0        5        0        5
+ 2100  127        4        0        0        0        6
+
+AMBAS: b = 1400, k = 59
+CAP: b = 1400, k = 127
+COTA: b = 2100, k = 67
+NINGUNA: no grid point with 7 of 10 instances
+-> data/targeted/A_main.csv: 30 rows

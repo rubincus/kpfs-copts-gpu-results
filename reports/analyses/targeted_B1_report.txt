@@ -1,0 +1,7 @@
+Check of B1 in double precision: full method (theta = eps), 24 runs of 20 s on the instances of stage B2, 251.2 million walker steps, 533743 acceptances by aspiration.
+Acceptances with Phi(S) + Delta <= Phi* in single precision: 43 (0.171 per million steps).
+  equal in float: 43; lower in float: 0; lowest Phi(S) + Delta - Phi* in float: 0
+  above Phi*_d in double precision (a strict increase, as Proposition 6a states): 1 of 43
+  largest |Phi_d - Phi*_d| over them: 9.54e-07
+Best values of the runs 3494-3729; spacing of float32 numbers at 3729: 0.000244.
+B1: the exceptions come from single precision. In double precision, 1 of them increase Phi* by less than the float32 spacing, as Proposition 6a states, and the other 42 leave it unchanged to within 9.5e-07. The aspiration test admits those only through rounding: in exact arithmetic, a value not above Phi* would need nu > theta = eps, and nu < eps.

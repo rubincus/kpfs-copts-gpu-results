@@ -1,0 +1,2 @@
+group,runs,best,mean,t_best,maxpub,maxpub_by,delta_best,delta_mean,cplex3h,MA_cor2023,MA_brkga,MAext,BRKGA,MFSS,HDM_MILS
+3-C-1000,2,2470.6,2470.4,5.98,2461.5,BRKGA,9.1,8.9,,2426.4,2442.50,2450.50,2461.50,2449.20,2457.20

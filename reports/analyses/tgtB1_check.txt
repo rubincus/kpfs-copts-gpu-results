@@ -1,0 +1,2 @@
+tB-01-z20 seed 2 --flags 0 --stag 3000, 15 launches: best 3494/3494, restarts 118/118, kernels 4317c81f40c2/7d97fc562415, b1 {'eq': 1, 'lt': 0, 'dpos': 0, 'min_f': 0.0, 'gap_d': 0.0}: identical
+tB-02-z0 seed 1 --flags 0 --stag 30000, 15 launches: best 3680/3680, restarts 0/0, kernels 4317c81f40c2/7d97fc562415, b1 {'eq': 0, 'lt': 0, 'dpos': 0, 'min_f': 0.0, 'gap_d': 0.0}: identical

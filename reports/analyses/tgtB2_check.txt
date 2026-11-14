@@ -1,0 +1,3 @@
+tB-01-z20 seed 1 --flags 8 --stag 30000, 15 launches: best 3491/3491, restarts 0/0, kernels 4317c81f40c2/5818faaad7f7, counters {'asp': 216788, 'asp_eq': 214891, 'undo': 20058, 'undo0': 19688, 'steps': 1260000}: identical
+tB-01-z20 seed 2 --flags 0 --stag 3000, 15 launches: best 3494/3494, restarts 118/118, kernels 4317c81f40c2/5818faaad7f7, counters {'asp': 3043, 'asp_eq': 1, 'undo': 0, 'undo0': 0, 'steps': 1260000}: identical
+tB-02-z0 seed 1 --flags 8 --stag 3000, 15 launches: best 3680/3680, restarts 141/141, kernels 4317c81f40c2/5818faaad7f7, counters {'asp': 60325, 'asp_eq': 55079, 'undo': 39654, 'undo0': 0, 'steps': 1260000}: identical
