@@ -1,0 +1,11 @@
+Group,r CPU,r Port,r Kernel,BK (of 50) CPU,BK (of 50) Port,BK (of 50) Kernel
+3-C-1000,140,249,1285,25,25,38
+4-C-700,193,296,1863,42,43,49
+4-FC-1000,100,196,1152,41,50,50
+L4-FC-2000,35,81,533,41,41,48
+,Kernel against CPU,,,Kernel against port,,
+Group,Speedup,Rate,Steps,Speedup,Rate,Steps
+3-C-1000,8.2,9.5,0.87,4.3,5.3,0.82
+4-C-700,7.8,10.0,0.78,6.1,6.5,0.95
+4-FC-1000,8.7,12.0,0.73,6.0,6.0,0.99
+L4-FC-2000,12.3,16.0,0.77,8.3,6.8,1.21

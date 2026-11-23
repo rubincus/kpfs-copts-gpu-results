@@ -1,19 +1,27 @@
 # Data for “Exact swap evaluation for convex set-count penalties: a GPU tabu search for the knapsack problem with forfeit sets”
 
 Data of the article "Exact swap evaluation for convex set-count penalties: a GPU tabu search for the knapsack
-problem with forfeit sets", submitted to Computational Optimization and Applications: the new instances, the cluster windows with and without split
-applications, the best solution found for each instance, the records of every run of CoPTS-KPFS and of the
-reference solvers, the reports of the analyses and a solution verifier.
+problem with forfeit sets", submitted to Computational Optimization and Applications: the new instances, the
+cluster windows with and without split applications, the best solution found for each instance, the records of
+every run of CoPTS-KPFS and of the reference solvers, the reports of the analyses, every results table and the
+data of every figure of the article, and a solution verifier.
 
-Authors: José García (ORCID 0000-0003-3126-8352) and Luis Rojas-Valdivia (ORCID 0009-0005-8935-7595), Escuela de Ingeniería de Construcción y Transporte, Pontificia
-Universidad Católica de Valparaíso, Avenida Brasil 2147, Valparaíso, Chile. Corresponding author: José García,
-jose.garcia@pucv.cl.
+Authors: José García (ORCID 0000-0003-3126-8352) and Luis Rojas-Valdivia (ORCID 0009-0005-8935-7595), Escuela de
+Ingeniería de Construcción y Transporte, Pontificia Universidad Católica de Valparaíso, Avenida Brasil 2147,
+Valparaíso, Chile. Corresponding author: José García, jose.garcia@pucv.cl.
 
 Online Resource 1 of the article is the PDF with its supplementary analyses (Sections S1 to S10 and Tables S1 to
-S7). Section numbers below refer to the article.
+S7). Section numbers below refer to the article. **`RESULTS.md` maps every table and figure of the article and of
+Online Resource 1 to the files that hold its data, and defines the measures.**
 
 | Path | Content |
 |---|---|
+| `RESULTS.md` | Guide from each table, figure and section of the article to its files. |
+| `tables/` | The results tables of the article and of Online Resource 1 as CSV, with the values as printed; `tables/INDEX.csv` gives the captions. |
+| `figures/` | The data drawn in each figure of the article, one row per point; `figures/INDEX.csv` gives the captions. |
+| `instances/` | The new instances: KPFS-L, bridge programs and maintenance windows of the cluster (see Instances below). |
+| `cluster_unsplit/` | The cluster windows without split applications, with their evaluations and runs. |
+| `results/` | Additional checks cited in the article and in Online Resource 1. |
 | `solutions/benchmark_best.csv` | Best solution found for each of the 600 instances of the benchmark of D'Ambrosio et al. (2023). |
 | `solutions/kpfsl_best.csv` | Best solution found for each of the 60 KPFS-L instances (n = 2000). |
 | `solutions/best_provenance.csv` | The run behind each best value. |

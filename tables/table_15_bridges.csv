@@ -1,0 +1,8 @@
+Level,Forfeit sets,n,l,δ,Free (%),Neighbors,LP gap (%),HiGHS (s)
+L0,Route segments,1864,106,0.3,72.0,2,0.00,0.3
+L1,Zones within 5 km,1864,694,13.4,0.4,139,0.08,1.4
+L2,"Trips, one per bridge",1864,2194,40.3,8.9,376,0.87,10.8
+L3,"Trips, two per bridge",1864,3947,67.8,6.8,439,1.58,20.3
+L4,"Trips, three per bridge",1864,5154,82.2,4.7,445,1.75,17.0
+L5,"As L4, tri-state region",3198,8642,79.8,2.4,489,2.60,142.4
+L6,"As L4, metropolitan region",3940,10322,72.5,4.4,437,0.69,19.6

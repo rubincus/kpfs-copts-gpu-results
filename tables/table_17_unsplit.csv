@@ -1,0 +1,5 @@
+Window,Model,"HiGHS, 1 h Value","HiGHS, 1 h Bound","CPU, 1 min Best","CPU, 1 min Mean",Best GPU program Value,Best GPU program V/k
+R1,split,8066,8096,8060,8052.6,8066,12/258
+R1,unsplit,8035,8035,8033,8026.0,7926,17/258
+U1,split,9836,9882,9849,9847.0,9852,258/258
+U1,unsplit,9825,9855,9825,9824.6,9837,263/258
