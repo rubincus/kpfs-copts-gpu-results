@@ -1,0 +1,139 @@
+Tie-breaking noise ON: nz_j = fl32(uni(seed_b, it, j) * fl32(0.001)), aspiration margin = noise amplitude; kernel 4317c81f40c2; B = 84 walkers, T = 1024 threads; 60 rounds x 150 steps per instance and weight setting; instances s3-C-1000-141, s4-FC-1000-241, kpfsl-s4-FC-2000-01.
+Reference: float64 enumeration of every drop, add and swap (near-ties re-ranked in exact rational arithmetic, gaps exact); eps = 0.001, gamma5 = 5u/(1-5u) = 2.98023e-07 (u = 2^-24). Pairs a / b below are non-tabu / overall.
+Every weight setting restarts the solver with the same seed: the first checked states (same x and tabu list, different weights) and later ones of walkers the forced weights did not deflect are shared, so counts of different settings are not independent.
+Host replica of the noise and of the class mask = device, bit for bit: 60525360 of 60525360 values (0 different).
+
+[weights as the walkers have them] all instances: 15120 states (5153 infeasible); M from 99 to 5.101e+05, bound eps + 2*gamma5*M from 0.001059 to 0.305
+  kernel = emulation (b): non-tabu 15058/15120 (99.6%), overall 15067/15120 (99.6%); where different, largest v(b) - v(kernel) 1.92e-07 / 8.868e-07 = 0.00191 / 0.00697 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 15042/15120 (99.5%), overall 15041/15120 (99.5%)
+  gap v(a) - v(kernel): zero in non-tabu 15102/15120 (99.9%), overall 15090/15120 (99.8%); largest 0.0007445 / 0.000832; largest gap/bound 0.5318 / 0.5577; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 16, overall 26 (equal sigma and gap < eps in 16 / 26; mean tie size 2.1 / 2.0; largest gap 0.0007445 / 0.000832; kernel = (b) in 16 / 26)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 62, overall 53 (largest gap 1.92e-07 / 8.868e-07)
+  kernel's overall choice: drop 659, add 1041, swap with a class representative 7558, swap of a pair sharing a tight set 5862, swap with an overflow item 0; non-empty classes with several members at the largest sigma 356591/5238059 (6.8%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 23, overall 50; equal to (a) in 11 / 26
+  aspiration (margin = noise amplitude): taken by the kernel in 45 states (exact rule on (a): 45); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 15042/15120 (99.5%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.044 / 0.0441; aspiration replica != applied move in 0 of 12753 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 2663 argmaxes (float64 order changed in 0)
+  s3-C-1000-141: 5040 states (1570 infeasible); M from 176 to 4.601e+05, bound eps + 2*gamma5*M from 0.001105 to 0.2753
+  kernel = emulation (b): non-tabu 5021/5040 (99.6%), overall 5029/5040 (99.8%); where different, largest v(b) - v(kernel) 0 / 0 = 0 / 0 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 5020/5040 (99.6%), overall 5024/5040 (99.7%)
+  gap v(a) - v(kernel): zero in non-tabu 5039/5040 (100.0%), overall 5035/5040 (99.9%); largest 0.0004862 / 0.000592; largest gap/bound 0.0030 / 0.2484; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 1, overall 5 (equal sigma and gap < eps in 1 / 5; mean tie size 2.0 / 2.0; largest gap 0.0004862 / 0.000592; kernel = (b) in 1 / 5)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 19, overall 11 (largest gap 0 / 0)
+  kernel's overall choice: drop 232, add 505, swap with a class representative 2424, swap of a pair sharing a tight set 1879, swap with an overflow item 0; non-empty classes with several members at the largest sigma 32649/1480249 (2.2%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 0, overall 7; equal to (a) in 0 / 2
+  aspiration (margin = noise amplitude): taken by the kernel in 15 states (exact rule on (a): 15); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 5020/5040 (99.6%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.0197 / 0.0277; aspiration replica != applied move in 0 of 4258 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 707 argmaxes (float64 order changed in 0)
+  s4-FC-1000-241: 5040 states (2023 infeasible); M from 99 to 5.101e+05, bound eps + 2*gamma5*M from 0.001059 to 0.305
+  kernel = emulation (b): non-tabu 5012/5040 (99.4%), overall 5008/5040 (99.4%); where different, largest v(b) - v(kernel) 1.224e-07 / 2.283e-07 = 4.37e-07 / 0.00195 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 5003/5040 (99.3%), overall 5000/5040 (99.2%)
+  gap v(a) - v(kernel): zero in non-tabu 5030/5040 (99.8%), overall 5029/5040 (99.8%); largest 0.0007445 / 0.0006502; largest gap/bound 0.4337 / 0.3204; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 9, overall 8 (equal sigma and gap < eps in 9 / 8; mean tie size 2.1 / 2.0; largest gap 0.0007445 / 0.0006502; kernel = (b) in 9 / 8)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 28, overall 32 (largest gap 1.224e-07 / 2.283e-07)
+  kernel's overall choice: drop 124, add 261, swap with a class representative 2680, swap of a pair sharing a tight set 1975, swap with an overflow item 0; non-empty classes with several members at the largest sigma 81409/1643627 (5.0%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 12, overall 12; equal to (a) in 5 / 5
+  aspiration (margin = noise amplitude): taken by the kernel in 11 states (exact rule on (a): 11); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 5003/5040 (99.3%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.044 / 0.0441; aspiration replica != applied move in 0 of 4175 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 1080 argmaxes (float64 order changed in 0)
+  kpfsl-s4-FC-2000-01: 5040 states (1560 infeasible); M from 145 to 2.901e+05, bound eps + 2*gamma5*M from 0.001086 to 0.1739
+  kernel = emulation (b): non-tabu 5025/5040 (99.7%), overall 5030/5040 (99.8%); where different, largest v(b) - v(kernel) 1.92e-07 / 8.868e-07 = 0.00191 / 0.00697 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 5019/5040 (99.6%), overall 5017/5040 (99.5%)
+  gap v(a) - v(kernel): zero in non-tabu 5033/5040 (99.9%), overall 5026/5040 (99.7%); largest 0.0006189 / 0.000832; largest gap/bound 0.5318 / 0.5577; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 6, overall 13 (equal sigma and gap < eps in 6 / 13; mean tie size 2.0 / 2.0; largest gap 0.0006189 / 0.000832; kernel = (b) in 6 / 13)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 15, overall 10 (largest gap 1.92e-07 / 8.868e-07)
+  kernel's overall choice: drop 303, add 275, swap with a class representative 2454, swap of a pair sharing a tight set 2008, swap with an overflow item 0; non-empty classes with several members at the largest sigma 242533/2114183 (11.5%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 11, overall 31; equal to (a) in 6 / 19
+  aspiration (margin = noise amplitude): taken by the kernel in 19 states (exact rule on (a): 19); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 5019/5040 (99.6%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.0434 / 0.0417; aspiration replica != applied move in 0 of 4320 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 876 argmaxes (float64 order changed in 0)
+
+[both weights forced to 1e+04] all instances: 15120 states (4119 infeasible); M from 9.011e+04 to 5.101e+05, bound eps + 2*gamma5*M from 0.05471 to 0.305
+  kernel = emulation (b): non-tabu 14795/15120 (97.9%), overall 14830/15120 (98.1%); where different, largest v(b) - v(kernel) 0.0009317 / 0.0009639 = 0.00625 / 0.00703 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 14781/15120 (97.8%), overall 14793/15120 (97.8%)
+  gap v(a) - v(kernel): zero in non-tabu 14782/15120 (97.8%), overall 14793/15120 (97.8%); largest 0.0009317 / 0.0009639; largest gap/bound 0.0062 / 0.0070; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 14, overall 37 (equal sigma and gap < eps in 14 / 37; mean tie size 2.1 / 2.0; largest gap 0.0007445 / 0.000832; kernel = (b) in 14 / 37)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 325, overall 290 (largest gap 0.0009317 / 0.0009639)
+  kernel's overall choice: drop 1410, add 507, swap with a class representative 7959, swap of a pair sharing a tight set 5244, swap with an overflow item 0; non-empty classes with several members at the largest sigma 356514/5236060 (6.8%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 23, overall 54; equal to (a) in 14 / 23
+  aspiration (margin = noise amplitude): taken by the kernel in 46 states (exact rule on (a): 47); decision from the kernel's float32 values != decision from the exact values in 1 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 14781/15120 (97.8%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.015 / 0.015; aspiration replica != applied move in 0 of 12615 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 2448 argmaxes (float64 order changed in 0)
+  s3-C-1000-141: 5040 states (1200 infeasible); M from 9.011e+04 to 4.601e+05, bound eps + 2*gamma5*M from 0.05471 to 0.2753
+  kernel = emulation (b): non-tabu 4951/5040 (98.2%), overall 4964/5040 (98.5%); where different, largest v(b) - v(kernel) 0.0009002 / 0.000946 = 0.00503 / 0.00529 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 4949/5040 (98.2%), overall 4954/5040 (98.3%)
+  gap v(a) - v(kernel): zero in non-tabu 4949/5040 (98.2%), overall 4954/5040 (98.3%); largest 0.0009002 / 0.000946; largest gap/bound 0.0050 / 0.0053; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 2, overall 10 (equal sigma and gap < eps in 2 / 10; mean tie size 2.0 / 2.0; largest gap 0.0004862 / 0.0006372; kernel = (b) in 2 / 10)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 89, overall 76 (largest gap 0.0009002 / 0.000946)
+  kernel's overall choice: drop 365, add 365, swap with a class representative 2602, swap of a pair sharing a tight set 1708, swap with an overflow item 0; non-empty classes with several members at the largest sigma 32911/1478733 (2.2%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 2, overall 12; equal to (a) in 1 / 2
+  aspiration (margin = noise amplitude): taken by the kernel in 11 states (exact rule on (a): 11); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 4949/5040 (98.2%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.0112 / 0.0111; aspiration replica != applied move in 0 of 4215 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 713 argmaxes (float64 order changed in 0)
+  s4-FC-1000-241: 5040 states (1499 infeasible); M from 2.7e+05 to 5.101e+05, bound eps + 2*gamma5*M from 0.162 to 0.305
+  kernel = emulation (b): non-tabu 4884/5040 (96.9%), overall 4896/5040 (97.1%); where different, largest v(b) - v(kernel) 0.0009026 / 0.0009026 = 0.0035 / 0.0035 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 4875/5040 (96.7%), overall 4885/5040 (96.9%)
+  gap v(a) - v(kernel): zero in non-tabu 4876/5040 (96.7%), overall 4885/5040 (96.9%); largest 0.0009026 / 0.0009026; largest gap/bound 0.0035 / 0.0035; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 9, overall 11 (equal sigma and gap < eps in 9 / 11; mean tie size 2.1 / 2.0; largest gap 0.0007445 / 0.0006715; kernel = (b) in 9 / 11)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 156, overall 144 (largest gap 0.0009026 / 0.0009026)
+  kernel's overall choice: drop 332, add 135, swap with a class representative 2868, swap of a pair sharing a tight set 1705, swap with an overflow item 0; non-empty classes with several members at the largest sigma 81489/1642336 (5.0%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 10, overall 16; equal to (a) in 4 / 8
+  aspiration (margin = noise amplitude): taken by the kernel in 13 states (exact rule on (a): 13); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 4875/5040 (96.7%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.00835 / 0.00852; aspiration replica != applied move in 0 of 4099 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 939 argmaxes (float64 order changed in 0)
+  kpfsl-s4-FC-2000-01: 5040 states (1420 infeasible); M from 1.901e+05 to 2.901e+05, bound eps + 2*gamma5*M from 0.1143 to 0.1739
+  kernel = emulation (b): non-tabu 4960/5040 (98.4%), overall 4970/5040 (98.6%); where different, largest v(b) - v(kernel) 0.0009317 / 0.0009639 = 0.00625 / 0.00703 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 4957/5040 (98.4%), overall 4954/5040 (98.3%)
+  gap v(a) - v(kernel): zero in non-tabu 4957/5040 (98.4%), overall 4954/5040 (98.3%); largest 0.0009317 / 0.0009639; largest gap/bound 0.0062 / 0.0070; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 3, overall 16 (equal sigma and gap < eps in 3 / 16; mean tie size 2.0 / 2.0; largest gap 0.0004945 / 0.000832; kernel = (b) in 3 / 16)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 80, overall 70 (largest gap 0.0009317 / 0.0009639)
+  kernel's overall choice: drop 713, add 7, swap with a class representative 2489, swap of a pair sharing a tight set 1831, swap with an overflow item 0; non-empty classes with several members at the largest sigma 242114/2114991 (11.4%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 11, overall 26; equal to (a) in 9 / 13
+  aspiration (margin = noise amplitude): taken by the kernel in 22 states (exact rule on (a): 23); decision from the kernel's float32 values != decision from the exact values in 1 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 4957/5040 (98.4%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.015 / 0.015; aspiration replica != applied move in 0 of 4301 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 796 argmaxes (float64 order changed in 0)
+
+[both weights forced to 1e+06] all instances: 15120 states (3257 infeasible); M from 1.4e+07 to 5.2e+07, bound eps + 2*gamma5*M from 8.346 to 31
+  kernel = emulation (b): non-tabu 14782/15120 (97.8%), overall 14811/15120 (98.0%); where different, largest v(b) - v(kernel) 2 / 2 = 0.0839 / 0.0839 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 14767/15120 (97.7%), overall 14779/15120 (97.7%)
+  gap v(a) - v(kernel): zero in non-tabu 14767/15120 (97.7%), overall 14779/15120 (97.7%); largest 2 / 2; largest gap/bound 0.0839 / 0.0839; gap >= 1/2 in 15 / 19 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 19, overall 32 (equal sigma and gap < eps in 19 / 32; mean tie size 2.1 / 2.0; largest gap 0.0007445 / 0.000832; kernel = (b) in 15 / 32)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 334, overall 309 (largest gap 2 / 2)
+  kernel's overall choice: drop 1250, add 514, swap with a class representative 8161, swap of a pair sharing a tight set 5195, swap with an overflow item 0; non-empty classes with several members at the largest sigma 357396/5232632 (6.8%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 26, overall 48; equal to (a) in 18 / 22
+  aspiration (margin = noise amplitude): taken by the kernel in 44 states (exact rule on (a): 45); decision from the kernel's float32 values != decision from the exact values in 1 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 14767/15120 (97.7%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.112 / 0.112; aspiration replica != applied move in 0 of 12614 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 2571 argmaxes (float64 order changed in 0)
+  s3-C-1000-141: 5040 states (1015 infeasible); M from 1.4e+07 to 4.6e+07, bound eps + 2*gamma5*M from 8.346 to 27.42
+  kernel = emulation (b): non-tabu 4932/5040 (97.9%), overall 4962/5040 (98.5%); where different, largest v(b) - v(kernel) 1 / 1 = 0.0559 / 0.0559 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 4929/5040 (97.8%), overall 4958/5040 (98.4%)
+  gap v(a) - v(kernel): zero in non-tabu 4929/5040 (97.8%), overall 4958/5040 (98.4%); largest 1 / 1; largest gap/bound 0.0559 / 0.0559; gap >= 1/2 in 3 / 3 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 3, overall 4 (equal sigma and gap < eps in 3 / 4; mean tie size 2.0 / 2.0; largest gap 0.0004862 / 0.000592; kernel = (b) in 3 / 4)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 108, overall 78 (largest gap 1 / 1)
+  kernel's overall choice: drop 358, add 374, swap with a class representative 2643, swap of a pair sharing a tight set 1665, swap with an overflow item 0; non-empty classes with several members at the largest sigma 33238/1478918 (2.2%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 0, overall 6; equal to (a) in 0 / 2
+  aspiration (margin = noise amplitude): taken by the kernel in 9 states (exact rule on (a): 9); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 4930/5040 (97.8%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.112 / 0.112; aspiration replica != applied move in 0 of 4187 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 767 argmaxes (float64 order changed in 0)
+  s4-FC-1000-241: 5040 states (1249 infeasible); M from 2.7e+07 to 5.2e+07, bound eps + 2*gamma5*M from 16.09 to 31
+  kernel = emulation (b): non-tabu 4880/5040 (96.8%), overall 4875/5040 (96.7%); where different, largest v(b) - v(kernel) 2 / 2 = 0.0839 / 0.0839 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 4873/5040 (96.7%), overall 4864/5040 (96.5%)
+  gap v(a) - v(kernel): zero in non-tabu 4873/5040 (96.7%), overall 4864/5040 (96.5%); largest 2 / 2; largest gap/bound 0.0839 / 0.0839; gap >= 1/2 in 12 / 16 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 11, overall 11 (equal sigma and gap < eps in 11 / 11; mean tie size 2.1 / 2.0; largest gap 0.0007445 / 0.0007089; kernel = (b) in 7 / 11)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 156, overall 165 (largest gap 2 / 2)
+  kernel's overall choice: drop 346, add 131, swap with a class representative 2859, swap of a pair sharing a tight set 1704, swap with an overflow item 0; non-empty classes with several members at the largest sigma 81393/1641666 (5.0%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 11, overall 13; equal to (a) in 6 / 6
+  aspiration (margin = noise amplitude): taken by the kernel in 16 states (exact rule on (a): 16); decision from the kernel's float32 values != decision from the exact values in 0 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 4873/5040 (96.7%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.0882 / 0.0882; aspiration replica != applied move in 0 of 4118 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 930 argmaxes (float64 order changed in 0)
+  kpfsl-s4-FC-2000-01: 5040 states (993 infeasible); M from 1.9e+07 to 2.9e+07, bound eps + 2*gamma5*M from 11.33 to 17.29
+  kernel = emulation (b): non-tabu 4970/5040 (98.6%), overall 4974/5040 (98.7%); where different, largest v(b) - v(kernel) 0.0009295 / 0.0009555 = 6.4e-05 / 6.82e-05 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 4965/5040 (98.5%), overall 4957/5040 (98.4%)
+  gap v(a) - v(kernel): zero in non-tabu 4965/5040 (98.5%), overall 4957/5040 (98.4%); largest 0.0009295 / 0.0009555; largest gap/bound 0.0001 / 0.0001; gap >= 1/2 in 0 / 0 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 5, overall 17 (equal sigma and gap < eps in 5 / 17; mean tie size 2.0 / 2.0; largest gap 0.0005789 / 0.000832; kernel = (b) in 5 / 17)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 70, overall 66 (largest gap 0.0009295 / 0.0009555)
+  kernel's overall choice: drop 546, add 9, swap with a class representative 2659, swap of a pair sharing a tight set 1826, swap with an overflow item 0; non-empty classes with several members at the largest sigma 242765/2112048 (11.5%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 15, overall 29; equal to (a) in 12 / 14
+  aspiration (margin = noise amplitude): taken by the kernel in 19 states (exact rule on (a): 20); decision from the kernel's float32 values != decision from the exact values in 1 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 4964/5040 (98.5%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.000152 / 0.000152; aspiration replica != applied move in 0 of 4309 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 874 argmaxes (float64 order changed in 0)
+
+[all weight settings] all instances: 45360 states (12529 infeasible); M from 99 to 5.2e+07, bound eps + 2*gamma5*M from 0.001059 to 31
+  kernel = emulation (b): non-tabu 44635/45360 (98.4%), overall 44708/45360 (98.6%); where different, largest v(b) - v(kernel) 2 / 2 = 0.0839 / 0.0839 x 2*gamma5*M
+  kernel = exact noisy argmax (a): non-tabu 44590/45360 (98.3%), overall 44613/45360 (98.4%)
+  gap v(a) - v(kernel): zero in non-tabu 44651/45360 (98.4%), overall 44662/45360 (98.5%); largest 2 / 2; largest gap/bound 0.5318 / 0.5577; gap >= 1/2 in 15 / 19 states
+  kernel != (a) because the class representative was chosen by the mask among members of equal sigma: non-tabu 49, overall 95 (equal sigma and gap < eps in 49 / 95; mean tie size 2.1 / 2.0; largest gap 0.0007445 / 0.000832; kernel = (b) in 45 / 95)
+  kernel != (a) by float32 rounding ((a) in the candidate set): non-tabu 721, overall 652 (largest gap 2 / 2)
+  kernel's overall choice: drop 3319, add 2062, swap with a class representative 23678, swap of a pair sharing a tight set 16301, swap with an overflow item 0; non-empty classes with several members at the largest sigma 1070501/15706751 (6.8%)
+  kernel choice is a class swap decided by the mask (several members at the largest sigma): non-tabu 72, overall 152; equal to (a) in 43 / 71
+  aspiration (margin = noise amplitude): taken by the kernel in 135 states (exact rule on (a): 137); decision from the kernel's float32 values != decision from the exact values in 2 states (0 with the exact values of the kernel's own choices); applied move = move of the exact rule in 44590/45360 (98.3%)
+  checks: kernel choice outside its candidate set 0 / 0; invalid codes 0 / 0; no move 0 / 0 (inconsistent 0 / 0); largest |DBG value - exact value| / (gamma5*M) 0.112 / 0.112; aspiration replica != applied move in 0 of 37982 observable states; applied move != rule on DBG 0; near-ties re-ranked exactly in 7682 argmaxes (float64 order changed in 0)
+time 319s

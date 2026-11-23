@@ -1,21 +1,30 @@
 cff-version: 1.2.0
-message: "If you use these results, please cite them as below, together with the benchmark of D'Ambrosio et al. (2023)."
-title: "CoPTS-KPFS results for the knapsack problem with forfeit sets"
+message: "If you use these data, please cite them as below, together with the article and the benchmark of D'Ambrosio et al. (2023)."
+title: "Data for “Exact swap evaluation for convex set-count penalties: a GPU tabu search for the knapsack problem with forfeit sets”"
 type: dataset
 authors:
   - family-names: "García"
     given-names: "José"
-version: "1.0.0"
-date-released: "2026-11-14"
+    orcid: "https://orcid.org/0000-0003-3126-8352"
+    affiliation: "Pontificia Universidad Católica de Valparaíso"
+  - family-names: "Rojas-Valdivia"
+    given-names: "Luis"
+    orcid: "https://orcid.org/0009-0005-8935-7595"
+    affiliation: "Pontificia Universidad Católica de Valparaíso"
+version: "2.0.0"
+date-released: "2026-11-23"
 license: CC-BY-4.0
-repository-code: "https://github.com/rubincus/kpfs-copts-gpu-results"
+url: "https://github.com/rubincus/kpfs-copts-gpu-results"
 abstract: >-
-  Best solutions found for the 600 instances of the benchmark of the knapsack problem with forfeit sets and the
-  60 KPFS-L instances, records of every run of the experiments of CoPTS-KPFS, a structure-guided cooperative tabu
-  search with exact neighborhood evaluation on GPUs, reports of the analyses and a solution verifier.
+  Data of the article "Exact swap evaluation for convex set-count penalties: a GPU tabu search for the knapsack
+  problem with forfeit sets": the new instances (KPFS-L with n = 2000, bridge rehabilitation programs built from the
+  2025 National Bridge Inventory and maintenance windows of a computing cluster built from the Alibaba cluster trace
+  v2018, with and without split applications), the best solution found for each of the 600 benchmark instances and
+  the 60 KPFS-L instances, the records of every run of the computational study, the reports of the analyses and a
+  solution verifier.
 keywords:
   - knapsack problem with forfeit sets
   - tabu search
   - GPU computing
-  - benchmark results
+  - benchmark instances
   - combinatorial optimization

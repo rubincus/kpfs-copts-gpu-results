@@ -1,0 +1,2 @@
+uid,scenario,type,n,l,b,k,seed,sha256,path,metro,bridges,projects,mandatory,f0,unavoidable,b_full,k_full,V0,list_obj,bundle,critical,communities,zone,pool,sets,trips,corridor,dmin,dmax,gamma,max_deg,trip_local,radius,eta,beta,lam,kfrac,gen_seed
+metro-NYC-lam3,0,MB,1864,5154,873,169,0,64599f6676f5ceff4c4dd3cf4815e0004ddf7e9ee29306a1c682f1e19efca5d7,metro-NYC-lam3.txt,NYC,2203,1878,14,-9525,400,1003,569,3799,-123682,0.5,3,zones,2.0,all,trips,3.0,1.0,4.0,40.0,2.0,200,True,5.0,0.05,0.1,3.0,0.05,20261031

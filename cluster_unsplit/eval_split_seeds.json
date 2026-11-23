@@ -1,0 +1,764 @@
+{
+ "srv-R1": {
+  "gpu": [
+   {
+    "seed": 1,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 10,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 6,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 7,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 8,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 9,
+    "f_split": 8066,
+    "f_unsplit": 7926,
+    "V_split": 12,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   }
+  ],
+  "cpu": [
+   {
+    "seed": 1,
+    "f_split": 8052,
+    "f_unsplit": 7996,
+    "V_split": 11,
+    "V_unsplit": 13,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 8048,
+    "f_unsplit": 7936,
+    "V_split": 12,
+    "V_unsplit": 16,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 8060,
+    "f_unsplit": 7920,
+    "V_split": 11,
+    "V_unsplit": 16,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 8055,
+    "f_unsplit": 7943,
+    "V_split": 13,
+    "V_unsplit": 17,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 8048,
+    "f_unsplit": 7992,
+    "V_split": 10,
+    "V_unsplit": 12,
+    "feas_unsplit": true
+   }
+  ],
+  "k": 258
+ },
+ "srv-R10": {
+  "gpu": [
+   {
+    "seed": 1,
+    "f_split": 11620,
+    "f_unsplit": 11620,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 10,
+    "f_split": 11640,
+    "f_unsplit": 11640,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 11654,
+    "f_unsplit": 11654,
+    "V_split": 1,
+    "V_unsplit": 1,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 11640,
+    "f_unsplit": 11640,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 11640,
+    "f_unsplit": 11640,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 11634,
+    "f_unsplit": 11634,
+    "V_split": 1,
+    "V_unsplit": 1,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 6,
+    "f_split": 11640,
+    "f_unsplit": 11640,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 7,
+    "f_split": 11640,
+    "f_unsplit": 11640,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 8,
+    "f_split": 11650,
+    "f_unsplit": 11650,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 9,
+    "f_split": 11630,
+    "f_unsplit": 11630,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   }
+  ],
+  "cpu": [
+   {
+    "seed": 1,
+    "f_split": 11494,
+    "f_unsplit": 11494,
+    "V_split": 1,
+    "V_unsplit": 1,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 11480,
+    "f_unsplit": 11480,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 11470,
+    "f_unsplit": 11470,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 11470,
+    "f_unsplit": 11470,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 11470,
+    "f_unsplit": 11470,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   }
+  ],
+  "k": 226
+ },
+ "srv-R25": {
+  "gpu": [
+   {
+    "seed": 1,
+    "f_split": 13570,
+    "f_unsplit": 13570,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 10,
+    "f_split": 13560,
+    "f_unsplit": 13560,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 13560,
+    "f_unsplit": 13560,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 13570,
+    "f_unsplit": 13570,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 13560,
+    "f_unsplit": 13560,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 13570,
+    "f_unsplit": 13570,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 6,
+    "f_split": 13570,
+    "f_unsplit": 13570,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 7,
+    "f_split": 13560,
+    "f_unsplit": 13560,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 8,
+    "f_split": 13560,
+    "f_unsplit": 13560,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 9,
+    "f_split": 13570,
+    "f_unsplit": 13570,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   }
+  ],
+  "cpu": [
+   {
+    "seed": 1,
+    "f_split": 13434,
+    "f_unsplit": 13434,
+    "V_split": 1,
+    "V_unsplit": 1,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 13454,
+    "f_unsplit": 13454,
+    "V_split": 1,
+    "V_unsplit": 1,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 13454,
+    "f_unsplit": 13454,
+    "V_split": 1,
+    "V_unsplit": 1,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 13440,
+    "f_unsplit": 13440,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 13440,
+    "f_unsplit": 13440,
+    "V_split": 0,
+    "V_unsplit": 0,
+    "feas_unsplit": true
+   }
+  ],
+  "k": 164
+ },
+ "srv-U1": {
+  "gpu": [
+   {
+    "seed": 1,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 10,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 2,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 3,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 4,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 5,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 6,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 7,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 8,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 9,
+    "f_split": 9852,
+    "f_unsplit": 9837,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   }
+  ],
+  "cpu": [
+   {
+    "seed": 1,
+    "f_split": 9846,
+    "f_unsplit": 9831,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 2,
+    "f_split": 9842,
+    "f_unsplit": 9827,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 3,
+    "f_split": 9849,
+    "f_unsplit": 9834,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 4,
+    "f_split": 9849,
+    "f_unsplit": 9834,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   },
+   {
+    "seed": 5,
+    "f_split": 9849,
+    "f_unsplit": 9834,
+    "V_split": 258,
+    "V_unsplit": 263,
+    "feas_unsplit": false
+   }
+  ],
+  "k": 258
+ },
+ "srv-U10": {
+  "gpu": [
+   {
+    "seed": 1,
+    "f_split": 11861,
+    "f_unsplit": 11861,
+    "V_split": 165,
+    "V_unsplit": 165,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 10,
+    "f_split": 11867,
+    "f_unsplit": 11867,
+    "V_split": 164,
+    "V_unsplit": 164,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 11872,
+    "f_unsplit": 11872,
+    "V_split": 157,
+    "V_unsplit": 157,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 11867,
+    "f_unsplit": 11867,
+    "V_split": 169,
+    "V_unsplit": 169,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 11868,
+    "f_unsplit": 11868,
+    "V_split": 162,
+    "V_unsplit": 162,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 11867,
+    "f_unsplit": 11867,
+    "V_split": 170,
+    "V_unsplit": 170,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 6,
+    "f_split": 11863,
+    "f_unsplit": 11863,
+    "V_split": 181,
+    "V_unsplit": 181,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 7,
+    "f_split": 11860,
+    "f_unsplit": 11860,
+    "V_split": 176,
+    "V_unsplit": 176,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 8,
+    "f_split": 11865,
+    "f_unsplit": 11865,
+    "V_split": 166,
+    "V_unsplit": 166,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 9,
+    "f_split": 11863,
+    "f_unsplit": 11863,
+    "V_split": 165,
+    "V_unsplit": 165,
+    "feas_unsplit": true
+   }
+  ],
+  "cpu": [
+   {
+    "seed": 1,
+    "f_split": 11772,
+    "f_unsplit": 11772,
+    "V_split": 193,
+    "V_unsplit": 193,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 11762,
+    "f_unsplit": 11762,
+    "V_split": 178,
+    "V_unsplit": 178,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 11764,
+    "f_unsplit": 11764,
+    "V_split": 209,
+    "V_unsplit": 209,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 11765,
+    "f_unsplit": 11765,
+    "V_split": 174,
+    "V_unsplit": 174,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 11753,
+    "f_unsplit": 11753,
+    "V_split": 175,
+    "V_unsplit": 175,
+    "feas_unsplit": true
+   }
+  ],
+  "k": 226
+ },
+ "srv-U25": {
+  "gpu": [
+   {
+    "seed": 1,
+    "f_split": 13682,
+    "f_unsplit": 13682,
+    "V_split": 127,
+    "V_unsplit": 127,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 10,
+    "f_split": 13685,
+    "f_unsplit": 13685,
+    "V_split": 126,
+    "V_unsplit": 126,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 13686,
+    "f_unsplit": 13686,
+    "V_split": 139,
+    "V_unsplit": 139,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 13685,
+    "f_unsplit": 13685,
+    "V_split": 122,
+    "V_unsplit": 122,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 13684,
+    "f_unsplit": 13684,
+    "V_split": 132,
+    "V_unsplit": 132,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 13684,
+    "f_unsplit": 13684,
+    "V_split": 133,
+    "V_unsplit": 133,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 6,
+    "f_split": 13682,
+    "f_unsplit": 13682,
+    "V_split": 126,
+    "V_unsplit": 126,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 7,
+    "f_split": 13684,
+    "f_unsplit": 13684,
+    "V_split": 129,
+    "V_unsplit": 129,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 8,
+    "f_split": 13684,
+    "f_unsplit": 13684,
+    "V_split": 126,
+    "V_unsplit": 126,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 9,
+    "f_split": 13686,
+    "f_unsplit": 13686,
+    "V_split": 133,
+    "V_unsplit": 133,
+    "feas_unsplit": true
+   }
+  ],
+  "cpu": [
+   {
+    "seed": 1,
+    "f_split": 13644,
+    "f_unsplit": 13644,
+    "V_split": 145,
+    "V_unsplit": 145,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 2,
+    "f_split": 13636,
+    "f_unsplit": 13636,
+    "V_split": 122,
+    "V_unsplit": 122,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 3,
+    "f_split": 13645,
+    "f_unsplit": 13645,
+    "V_split": 133,
+    "V_unsplit": 133,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 4,
+    "f_split": 13643,
+    "f_unsplit": 13643,
+    "V_split": 106,
+    "V_unsplit": 106,
+    "feas_unsplit": true
+   },
+   {
+    "seed": 5,
+    "f_split": 13642,
+    "f_unsplit": 13642,
+    "V_split": 127,
+    "V_unsplit": 127,
+    "feas_unsplit": true
+   }
+  ],
+  "k": 164
+ }
+}

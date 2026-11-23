@@ -1,0 +1,8 @@
+  weight 1e+04 s1-C-1000-341: states so far 168
+  weight 1e+04 s4-FC-1000-241: states so far 336
+  weight 1e+04 kpfsl-s4-FC-2000-01: states so far 504
+weight 1e+04: 504 states (178 infeasible), 0 mismatches at relative tolerance 1e-4; chosen move not an exact argmax in 0 states (non-tabu 0), largest exact gap 0 (relative 0)
+  weight 1e+06 s1-C-1000-341: states so far 168
+  weight 1e+06 s4-FC-1000-241: states so far 336
+  weight 1e+06 kpfsl-s4-FC-2000-01: states so far 504
+weight 1e+06: 504 states (142 infeasible), 0 mismatches at relative tolerance 1e-4; chosen move not an exact argmax in 0 states (non-tabu 0), largest exact gap 0 (relative 0)

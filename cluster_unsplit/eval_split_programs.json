@@ -1,0 +1,122 @@
+{
+ "srv-R1": {
+  "k_split": 258,
+  "k_unsplit": 258,
+  "gpu": {
+   "f_split": 8066,
+   "f_unsplit": 7926,
+   "V_split": 12,
+   "V_unsplit": 17,
+   "feas_unsplit": true,
+   "size": 240
+  },
+  "highs": {
+   "f_split": 8066,
+   "f_unsplit": 7926,
+   "V_split": 12,
+   "V_unsplit": 17,
+   "feas_unsplit": true,
+   "size": 240
+  }
+ },
+ "srv-R10": {
+  "k_split": 226,
+  "k_unsplit": 226,
+  "gpu": {
+   "f_split": 11654,
+   "f_unsplit": 11654,
+   "V_split": 1,
+   "V_unsplit": 1,
+   "feas_unsplit": true,
+   "size": 456
+  },
+  "highs": {
+   "f_split": 11590,
+   "f_unsplit": 11590,
+   "V_split": 0,
+   "V_unsplit": 0,
+   "feas_unsplit": true,
+   "size": 449
+  }
+ },
+ "srv-R25": {
+  "k_split": 164,
+  "k_unsplit": 164,
+  "gpu": {
+   "f_split": 13570,
+   "f_unsplit": 13570,
+   "V_split": 0,
+   "V_unsplit": 0,
+   "feas_unsplit": true,
+   "size": 647
+  },
+  "highs": {
+   "f_split": 13590,
+   "f_unsplit": 13590,
+   "V_split": 0,
+   "V_unsplit": 0,
+   "feas_unsplit": true,
+   "size": 649
+  }
+ },
+ "srv-U1": {
+  "k_split": 258,
+  "k_unsplit": 258,
+  "gpu": {
+   "f_split": 9852,
+   "f_unsplit": 9837,
+   "V_split": 258,
+   "V_unsplit": 263,
+   "feas_unsplit": false,
+   "size": 346
+  },
+  "highs": {
+   "f_split": 9836,
+   "f_unsplit": 9821,
+   "V_split": 258,
+   "V_unsplit": 263,
+   "feas_unsplit": false,
+   "size": 343
+  }
+ },
+ "srv-U10": {
+  "k_split": 226,
+  "k_unsplit": 226,
+  "gpu": {
+   "f_split": 11872,
+   "f_unsplit": 11872,
+   "V_split": 157,
+   "V_unsplit": 157,
+   "feas_unsplit": true,
+   "size": 510
+  },
+  "highs": {
+   "f_split": 11839,
+   "f_unsplit": 11839,
+   "V_split": 182,
+   "V_unsplit": 182,
+   "feas_unsplit": true,
+   "size": 512
+  }
+ },
+ "srv-U25": {
+  "k_split": 164,
+  "k_unsplit": 164,
+  "gpu": {
+   "f_split": 13686,
+   "f_unsplit": 13686,
+   "V_split": 139,
+   "V_unsplit": 139,
+   "feas_unsplit": true,
+   "size": 682
+  },
+  "highs": {
+   "f_split": 13692,
+   "f_unsplit": 13692,
+   "V_split": 120,
+   "V_unsplit": 120,
+   "feas_unsplit": true,
+   "size": 680
+  }
+ }
+}

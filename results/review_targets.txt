@@ -1,0 +1,33 @@
+External target: best known value of each instance. success = share of runs that reach it within 30 s;
+RMST = mean time to it, censored runs counted at 30 s; ratio = RMST of the variant over the full method,
+hierarchical bootstrap 95% (instances, then seeds).
+
+Ablation (variant against the full method):
+  beta fixed at 1e4, 3-C-1000  50  success 0.74 -> 0.54   RMST  12.27 ->  19.12 s   ratio 1.56 [1.16, 3.31]
+  beta fixed at 1e4, 4-C-700  50  success 0.98 -> 0.88   RMST   3.67 ->   5.75 s   ratio 1.57 [1.04, 3.96]
+  beta fixed at 1e4, 4-FC-1000  50  success 1.00 -> 0.84   RMST   1.83 ->  13.70 s   ratio 7.48 [5.54, 10.48]
+  beta fixed at 1e4, L4-FC-2000  50  success 0.96 -> 0.96   RMST   3.70 ->   3.62 s   ratio 0.98 [0.74, 1.33]
+  mu fixed at 1e4, 3-C-1000  50  success 0.74 -> 0.78   RMST  12.27 ->  12.32 s   ratio 1.00 [0.83, 1.32]
+  mu fixed at 1e4, 4-C-700  50  success 0.98 -> 1.00   RMST   3.67 ->   1.95 s   ratio 0.53 [0.34, 0.96]
+  mu fixed at 1e4, 4-FC-1000  50  success 1.00 -> 1.00   RMST   1.83 ->   3.41 s   ratio 1.86 [1.21, 2.75]
+  mu fixed at 1e4, L4-FC-2000  50  success 0.96 -> 0.82   RMST   3.70 ->   9.90 s   ratio 2.67 [1.44, 12.70]
+  one controller, 3-C-1000  50  success 0.74 -> 0.72   RMST  12.27 ->  11.87 s   ratio 0.97 [0.80, 1.27]
+  one controller, 4-C-700   50  success 0.98 -> 0.96   RMST   3.67 ->   3.37 s   ratio 0.92 [0.49, 1.41]
+  one controller, 4-FC-1000  50  success 1.00 -> 1.00   RMST   1.83 ->   3.32 s   ratio 1.81 [1.19, 2.67]
+  one controller, L4-FC-2000  50  success 0.96 -> 0.96   RMST   3.70 ->   4.25 s   ratio 1.15 [0.85, 1.55]
+  aspiration margin 0, 3-C-1000  50  success 0.74 -> 0.78   RMST  12.27 ->  11.88 s   ratio 0.97 [0.76, 1.33]
+  aspiration margin 0, 4-C-700  50  success 0.98 -> 1.00   RMST   3.67 ->   2.65 s   ratio 0.72 [0.40, 1.11]
+  aspiration margin 0, 4-FC-1000  50  success 1.00 -> 1.00   RMST   1.83 ->   1.77 s   ratio 0.97 [0.69, 1.34]
+  aspiration margin 0, L4-FC-2000  50  success 0.96 -> 0.92   RMST   3.70 ->   4.08 s   ratio 1.10 [0.55, 1.58]
+  no pair correction, 3-C-1000  50  success 0.74 -> 0.58   RMST  12.27 ->  16.31 s   ratio 1.33 [1.01, 2.62]
+  no pair correction, 4-C-700  50  success 0.98 -> 0.84   RMST   3.67 ->   6.85 s   ratio 1.87 [1.25, 2.85]
+  no pair correction, 4-FC-1000  50  success 1.00 -> 1.00   RMST   1.83 ->   3.35 s   ratio 1.83 [0.67, 4.06]
+  no pair correction, L4-FC-2000  50  success 0.96 -> 0.86   RMST   3.70 ->   5.27 s   ratio 1.42 [0.67, 2.08]
+  no cooperation, 3-C-1000  50  success 0.74 -> 0.82   RMST  12.27 ->  11.24 s   ratio 0.92 [0.61, 1.63]
+  no cooperation, 4-C-700   50  success 0.98 -> 0.92   RMST   3.67 ->   5.29 s   ratio 1.44 [0.90, 2.27]
+  no cooperation, 4-FC-1000  50  success 1.00 -> 1.00   RMST   1.83 ->   3.38 s   ratio 1.84 [0.97, 3.03]
+  no cooperation, L4-FC-2000  50  success 0.96 -> 0.96   RMST   3.70 ->   3.12 s   ratio 0.84 [0.54, 1.07]
+
+Contribution of the GPU design (other implementation against the final GPU kernel):
+  direct port              200  success 0.93 -> 0.80   RMST   5.26 ->  12.68 s   ratio 2.41 [1.73, 4.17]
+  CPU, 32 threads          200  success 0.93 -> 0.74   RMST   5.26 ->  13.93 s   ratio 2.65 [1.87, 4.79]

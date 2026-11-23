@@ -1,4 +1,4 @@
-design Q against the full method F on the same instances and seeds 1-5, for the discussion of Section 7.4;
+design Q against the full method F on the same instances and seeds 1-5, for the discussion of Section 7.6;
 ratio = median time of the design / median time of F to the easy target (worst final value of F over its ten seeds);
 hier 95% = hierarchical bootstrap, instances then seeds; fin w/b = final values worse/better than F; cens = runs of the design that never reach the target
 

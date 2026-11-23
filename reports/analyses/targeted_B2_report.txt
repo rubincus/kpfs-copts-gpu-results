@@ -11,6 +11,6 @@ z20 stag 3000 theta=0       6     31.2   4589610  4552679    430546    423092 14
 z20 stag 30000 full         6     31.2     42079        7         0         0   1350.24     0.225     0.00    0.000
 z20 stag 30000 theta=0      6     31.1   4524355  4498216    426425    419151 145571.27144730.245 13720.2413486.197
 
-B1 (implied by Proposition 6a): with theta = eps, no aspiration acceptance leaves Phi* unchanged -> does NOT hold: asp_eq = 33 over the 24 runs of the full method.
-B2 (construction of Proposition 6b): with theta = 0 on z20, aspiration acceptances that leave Phi* unchanged and steps that undo the previous one on items of profit 0 (cycles S <-> S + j) -> holds: stag 3000: asp_eq 4552679, undo0 423092; stag 30000: asp_eq 4498216, undo0 419151.
+B1 (implied by Proposition 8a): with theta = eps, no aspiration acceptance leaves Phi* unchanged -> does NOT hold: asp_eq = 33 over the 24 runs of the full method.
+B2 (construction of Proposition 8b): with theta = 0 on z20, aspiration acceptances that leave Phi* unchanged and steps that undo the previous one on items of profit 0 (cycles S <-> S + j) -> holds: stag 3000: asp_eq 4552679, undo0 423092; stag 30000: asp_eq 4498216, undo0 419151.
 For comparison, the full method on z20: stag 3000: undo0 0; stag 30000: undo0 0.

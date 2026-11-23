@@ -1,0 +1,10 @@
+Theorem 5 general, convex g and c            9610 cases      0 differences
+Sign lemma, concave g (expected to fail)     9676 cases   7221 wrong (74.6%)
+Theorem 5 general, concave g and c (expected to fail)   9589 cases   8223 wrong (85.8%)
+Sorted classes, convex g and c               9606 cases      0 differences
+Sorted classes, concave g and c              9583 cases      0 differences
+Sorted classes, any g and c                  9621 cases      0 differences
+Same move, class maxima, convex              9605 cases      0 differences
+Same move, sorted classes, convex            9630 cases      0 differences
+Same move, sorted classes, concave           9589 cases      0 differences
+Same move, sorted classes, any               9564 cases      0 differences

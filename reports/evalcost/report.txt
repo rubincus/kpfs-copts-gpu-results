@@ -1,0 +1,58 @@
+Cost of the exact step (CPU, one thread pinned to a performance core, high priority)
+
+exactness: 4600 states, 0 discrepancies of E2/E3/E3+ against E1 (value and code); 69 states also checked by applying every move, 0 discrepancies
+
+1-NC-1000    n= 1000 |S|=    17 K=  356 trip=   10060 tight-pairs=44.34% unsel/K=   2.8 feasible=  64% | t(us) E1=    123.9 E2=    78.5 E3=    86.5 E3+=    70.3 | E1/E3= 1.45 E1/E3+= 1.77 E2/E3= 0.90 E2/E3+= 1.12 E1/E2= 1.59
+1-C-1000     n= 1000 |S|=    19 K=  364 trip=   10428 tight-pairs=43.85% unsel/K=   2.7 feasible=  58% | t(us) E1=    130.8 E2=    82.8 E3=    90.5 E3+=    73.3 | E1/E3= 1.46 E1/E3+= 1.82 E2/E3= 0.92 E2/E3+= 1.14 E1/E2= 1.59
+1-FC-1000    n= 1000 |S|=    19 K=  366 trip=   10912 tight-pairs=43.75% unsel/K=   2.7 feasible=  56% | t(us) E1=    136.0 E2=    87.6 E3=    94.0 E3+=    76.7 | E1/E3= 1.47 E1/E3+= 1.79 E2/E3= 0.93 E2/E3+= 1.15 E1/E2= 1.57
+2-NC-1000    n= 1000 |S|=     8 K=  412 trip=   15175 tight-pairs=86.70% unsel/K=   2.4 feasible=  50% | t(us) E1=     79.2 E2=    78.0 E3=    92.8 E3+=    89.3 | E1/E3= 0.88 E1/E3+= 0.92 E2/E3= 0.85 E2/E3+= 0.85 E1/E2= 1.06
+2-C-1000     n= 1000 |S|=     8 K=  420 trip=   16168 tight-pairs=86.14% unsel/K=   2.4 feasible=  46% | t(us) E1=     85.6 E2=    87.9 E3=    99.9 E3+=    97.5 | E1/E3= 0.87 E1/E3+= 0.90 E2/E3= 0.86 E2/E3+= 0.86 E1/E2= 1.04
+2-FC-1000    n= 1000 |S|=     8 K=  428 trip=   17073 tight-pairs=85.98% unsel/K=   2.3 feasible=  34% | t(us) E1=     88.0 E2=    89.7 E3=   101.7 E3+=   102.4 | E1/E3= 0.92 E1/E3+= 0.93 E2/E3= 0.86 E2/E3+= 0.86 E1/E2= 1.09
+3-NC-1000    n= 1000 |S|=    89 K=  299 trip=    9411 tight-pairs=10.98% unsel/K=   3.0 feasible=  91% | t(us) E1=    691.2 E2=   263.8 E3=   177.6 E3+=    89.9 | E1/E3= 3.91 E1/E3+= 7.69 E2/E3= 1.49 E2/E3+= 2.93 E1/E2= 2.63
+3-C-1000     n= 1000 |S|=    90 K=  294 trip=    9462 tight-pairs=10.90% unsel/K=   3.1 feasible=  65% | t(us) E1=    698.8 E2=   264.2 E3=   176.0 E3+=    91.9 | E1/E3= 3.98 E1/E3+= 7.62 E2/E3= 1.51 E2/E3+= 2.88 E1/E2= 2.64
+3-FC-1000    n= 1000 |S|=    95 K=  296 trip=    9926 tight-pairs=10.98% unsel/K=   3.1 feasible=  63% | t(us) E1=    734.9 E2=   281.2 E3=   187.5 E3+=    98.5 | E1/E3= 3.92 E1/E3+= 7.42 E2/E3= 1.50 E2/E3+= 2.84 E1/E2= 2.61
+4-NC-1000    n= 1000 |S|=    80 K=  319 trip=   15179 tight-pairs=18.77% unsel/K=   2.9 feasible= 100% | t(us) E1=    856.6 E2=   256.1 E3=   192.7 E3+=   111.0 | E1/E3= 4.42 E1/E3+= 7.65 E2/E3= 1.33 E2/E3+= 2.30 E1/E2= 3.33
+4-C-1000     n= 1000 |S|=    79 K=  312 trip=   14880 tight-pairs=18.61% unsel/K=   3.0 feasible=  63% | t(us) E1=    852.4 E2=   253.8 E3=   189.2 E3+=   110.3 | E1/E3= 4.49 E1/E3+= 7.67 E2/E3= 1.34 E2/E3+= 2.28 E1/E2= 3.34
+4-FC-1000    n= 1000 |S|=    93 K=  328 trip=   18378 tight-pairs=19.67% unsel/K=   2.8 feasible=  54% | t(us) E1=    990.4 E2=   304.4 E3=   236.4 E3+=   143.7 | E1/E3= 4.19 E1/E3+= 6.85 E2/E3= 1.29 E2/E3+= 2.09 E1/E2= 3.26
+L3-NC-2000   n= 2000 |S|=   117 K=  389 trip=   25354 tight-pairs=10.85% unsel/K=   4.8 feasible= 100% | t(us) E1=   2336.4 E2=   724.9 E3=   366.2 E3+=   217.3 | E1/E3= 6.37 E1/E3+=10.75 E2/E3= 1.98 E2/E3+= 3.34 E1/E2= 3.22
+L3-C-2000    n= 2000 |S|=   133 K=  400 trip=   29278 tight-pairs=11.15% unsel/K=   4.7 feasible=  77% | t(us) E1=   2627.8 E2=   827.8 E3=   430.8 E3+=   255.2 | E1/E3= 6.08 E1/E3+=10.27 E2/E3= 1.92 E2/E3+= 3.24 E1/E2= 3.18
+L3-FC-2000   n= 2000 |S|=   144 K=  404 trip=   31838 tight-pairs=11.23% unsel/K=   4.6 feasible=  48% | t(us) E1=   2815.5 E2=   893.7 E3=   468.5 E3+=   282.6 | E1/E3= 6.02 E1/E3+= 9.99 E2/E3= 1.91 E2/E3+= 3.16 E1/E2= 3.16
+L4-NC-2000   n= 2000 |S|=    89 K=  403 trip=   35034 tight-pairs=18.62% unsel/K=   4.7 feasible= 100% | t(us) E1=   2620.8 E2=   603.5 E3=   363.0 E3+=   247.4 | E1/E3= 7.23 E1/E3+=10.58 E2/E3= 1.66 E2/E3+= 2.44 E1/E2= 4.34
+L4-C-2000    n= 2000 |S|=   101 K=  417 trip=   43547 tight-pairs=20.50% unsel/K=   4.5 feasible=  88% | t(us) E1=   2980.2 E2=   699.8 E3=   442.0 E3+=   305.6 | E1/E3= 6.73 E1/E3+= 9.70 E2/E3= 1.58 E2/E3+= 2.28 E1/E2= 4.25
+L4-FC-2000   n= 2000 |S|=   107 K=  421 trip=   46185 tight-pairs=20.34% unsel/K=   4.5 feasible=  64% | t(us) E1=   3190.6 E2=   770.2 E3=   497.5 E3+=   363.9 | E1/E3= 6.47 E1/E3+= 8.76 E2/E3= 1.55 E2/E3+= 2.12 E1/E2= 4.15
+Bridges L2   n= 1864 |S|=    95 K=  497 trip=   12540 tight-pairs= 2.53% unsel/K=   3.6 feasible=  64% | t(us) E1=    606.7 E2=   477.9 E3=   217.2 E3+=    80.4 | E1/E3= 2.80 E1/E3+= 7.48 E2/E3= 2.21 E2/E3+= 5.92 E1/E2= 1.27
+Bridges L4   n= 1864 |S|=   109 K=  654 trip=   18267 tight-pairs= 2.47% unsel/K=   2.7 feasible=  71% | t(us) E1=    687.6 E2=   559.6 E3=   324.6 E3+=   105.8 | E1/E3= 2.12 E1/E3+= 6.43 E2/E3= 1.72 E2/E3+= 5.22 E1/E2= 1.23
+Bridges L5   n= 3198 |S|=   220 K=  928 trip=   29428 tight-pairs= 1.42% unsel/K=   3.2 feasible=  53% | t(us) E1=   2405.6 E2=  1860.7 E3=   852.1 E3+=   187.4 | E1/E3= 2.83 E1/E3+=12.82 E2/E3= 2.19 E2/E3+= 9.90 E1/E2= 1.29
+Cluster R10  n= 4004 |S|=   436 K=  342 trip=   99310 tight-pairs= 5.33% unsel/K=  10.4 feasible=  68% | t(us) E1=   7923.6 E2=  4804.1 E3=  1268.0 E3+=   787.2 | E1/E3= 6.27 E1/E3+=10.05 E2/E3= 3.80 E2/E3+= 6.12 E1/E2= 1.65
+Cluster U1   n= 4004 |S|=   343 K=  326 trip=   33260 tight-pairs= 2.20% unsel/K=  11.2 feasible=  57% | t(us) E1=   5256.9 E2=  3642.7 E3=   682.9 E3+=   330.2 | E1/E3= 7.68 E1/E3+=15.88 E2/E3= 5.33 E2/E3+=10.98 E1/E2= 1.44
+
+benchmark: E1/E3+ 0.9-7.7, E1/E3 0.9-4.5, E2/E3+ 0.8-2.9, E1/E2 1.0-3.3
+KPFS-L: E1/E3+ 8.8-10.7, E1/E3 6.0-7.2, E2/E3+ 2.1-3.3, E1/E2 3.2-4.3
+applications: E1/E3+ 6.4-15.9, E1/E3 2.1-7.7, E2/E3+ 5.2-11.0, E1/E2 1.2-1.6
+
+Full runs (E3 for 10 s, then E1 and E2 for the same steps)
+s3-C-1000-141          steps=  92769 identical E1=True E2=True elapsed E1/E3= 6.70 E2/E3= 2.58 time-to-final-value E1/E3= 6.69
+s3-C-1000-142          steps=  92065 identical E1=True E2=True elapsed E1/E3= 6.70 E2/E3= 2.59 time-to-final-value E1/E3= 6.72
+s3-C-1000-143          steps=  93513 identical E1=True E2=True elapsed E1/E3= 6.98 E2/E3= 2.69 time-to-final-value E1/E3= 6.94
+s3-C-1000-144          steps=  93257 identical E1=True E2=True elapsed E1/E3= 7.13 E2/E3= 2.74 time-to-final-value E1/E3= 7.13
+s3-C-1000-145          steps=  92193 identical E1=True E2=True elapsed E1/E3= 6.83 E2/E3= 2.82 time-to-final-value E1/E3= 6.83
+s4-C-700-221           steps= 128129 identical E1=True E2=True elapsed E1/E3= 5.83 E2/E3= 1.88 time-to-final-value E1/E3= 5.85
+s4-C-700-222           steps= 130641 identical E1=True E2=True elapsed E1/E3= 6.09 E2/E3= 2.03 time-to-final-value E1/E3= 6.17
+s4-C-700-223           steps= 121641 identical E1=True E2=True elapsed E1/E3= 5.85 E2/E3= 1.88 time-to-final-value E1/E3= 5.83
+s4-C-700-224           steps= 130513 identical E1=True E2=True elapsed E1/E3= 6.00 E2/E3= 1.92 time-to-final-value E1/E3= 6.01
+s4-C-700-225           steps= 134897 identical E1=True E2=True elapsed E1/E3= 5.93 E2/E3= 1.89 time-to-final-value E1/E3= 5.94
+s4-FC-1000-241         steps=  63257 identical E1=True E2=True elapsed E1/E3= 6.58 E2/E3= 2.01 time-to-final-value E1/E3= 6.59
+s4-FC-1000-242         steps=  63641 identical E1=True E2=True elapsed E1/E3= 6.54 E2/E3= 1.94 time-to-final-value E1/E3= 6.54
+s4-FC-1000-243         steps=  67449 identical E1=True E2=True elapsed E1/E3= 6.48 E2/E3= 1.91 time-to-final-value E1/E3= 6.49
+s4-FC-1000-244         steps=  66513 identical E1=True E2=True elapsed E1/E3= 6.35 E2/E3= 1.86 time-to-final-value E1/E3= 6.38
+s4-FC-1000-245         steps=  70705 identical E1=True E2=True elapsed E1/E3= 6.40 E2/E3= 1.93 time-to-final-value E1/E3= 6.41
+kpfsl-s4-FC-2000-01    steps=  28897 identical E1=True E2=True elapsed E1/E3= 8.46 E2/E3= 2.06 time-to-final-value E1/E3= 8.43
+kpfsl-s4-FC-2000-02    steps=  27705 identical E1=True E2=True elapsed E1/E3= 8.46 E2/E3= 2.05 time-to-final-value E1/E3= 8.42
+kpfsl-s4-FC-2000-03    steps=  26065 identical E1=True E2=True elapsed E1/E3= 8.38 E2/E3= 2.04 time-to-final-value E1/E3= 8.34
+kpfsl-s4-FC-2000-04    steps=  26449 identical E1=True E2=True elapsed E1/E3= 8.22 E2/E3= 2.00 time-to-final-value E1/E3= 7.71
+kpfsl-s4-FC-2000-05    steps=  27961 identical E1=True E2=True elapsed E1/E3= 8.45 E2/E3= 2.07 time-to-final-value E1/E3= 6.61
+
+3-C-1000    identical 5/5; E1/E3 6.83 (6.70-7.13); E2/E3 2.69; steps 92065-93513
+4-C-700     identical 5/5; E1/E3 5.93 (5.83-6.09); E2/E3 1.89; steps 121641-134897
+4-FC-1000   identical 5/5; E1/E3 6.48 (6.35-6.58); E2/E3 1.93; steps 63257-70705
+L4-FC-2000  identical 5/5; E1/E3 8.45 (8.22-8.46); E2/E3 2.05; steps 26065-28897
